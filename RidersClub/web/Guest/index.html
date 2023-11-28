@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Riders Club</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="HimanshuGupta">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="Template/css/bootstrap.min.css" rel="stylesheet">	
+		<!-- Animate CSS -->
+		<link href="Template/css/animate.min.css" rel="stylesheet">
+		<!-- Basic stylesheet -->
+		<link rel="stylesheet" href="Template/css/owl.carousel.css">
+		<!-- Font awesome CSS -->
+		<link href="Template/css/font-awesome.min.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="Template/css/style.css" rel="stylesheet">
+		<link href="Template/css/style-color.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="Template/img/logo/favicon.ico">
+	</head>
+	
+	<body>
+		
+		<!-- modal for booking ticket form -->
+		<div class="modal fade" id="bookTicket" tabindex="-1" role="dialog" aria-labelledby="BookTicket">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Name of The Event &nbsp; <small><span class="label label-success">Available</span> &nbsp; <span class="label label-danger">Not Available</span></small></h4>
+					</div>
+					<!-- form for events ticket booking -->
+					<form>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@mail.com">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputContact">Contact</label>
+								<input type="text" class="form-control" id="exampleInputContact" placeholder="+91 55 5555 5555">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputSeats">Number of Tickets</label>
+								<select class="form-control" id="exampleInputSeats">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> I accept the Terms of Service
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<!-- link to payment gatway here -->
+							<button type="button" class="btn btn-primary">Book Now</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!-- wrapper -->
+		<div class="wrapper" id="home">
+		
+			<!-- header area -->
+			<header>
+				<!-- secondary menu -->
+				
+				<!-- primary menu -->
+				<nav class="navbar navbar-fixed-top navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- logo area -->
+							<a class="navbar-brand" href="index.html">
+								<!-- logo image -->
+                                                                <img class="img-responsive" src="Template/img/logo/logo1.png" alt="" width="100" height="50" />
+							</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="Template/../Shop.jsp">Shop</a></li>
+								<li><a href="Template/../ShowRooms.jsp">Showroom</a></li>
+								<li><a href="Template/../User.jsp">User</a></li>
+								<li><a href="Template/../Login.jsp">Login</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</header>
+			<!--/ header end -->
+			
+			<!-- banner area -->
+			<div class="banner">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="Template/img/banner/b3.jpg" alt="...">
+							<div class="container">
+								<!-- banner caption -->
+								<div class="carousel-caption slide-one">
+									<!-- heading -->
+                                                                        <h2 class="animated fadeInLeftBig"><strong> Mountains Are Calling</strong></h2>
+									<!-- paragraph -->
+                                                                        <h3 class="animated fadeInRightBig"><strong>I Want To Go</strong></h3>
+									<!-- button -->
+									
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="Template/img/banner/b5.jpg" alt="...">
+							<div class="container">
+								<!-- banner caption -->
+								<div class="carousel-caption slide-two">
+									<!-- heading -->
+                                                                        <h2 class="animated fadeInLeftBig"><strong> Some Call It An Adventure</strong></h2>
+									<!-- paragraph -->
+                                                                        <h3 class="animated fadeInRightBig"><strong>We Call It Life.</strong></h3>
+									<!-- button -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="Template/#carousel-example-generic" role="button" data-slide="prev">
+						<span class="fa fa-arrow-left" aria-hidden="true"></span>
+					</a>
+					<a class="right carousel-control" href="Template/#carousel-example-generic" role="button" data-slide="next">
+						<span class="fa fa-arrow-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+			<!--/ banner end -->
+			
+			<!-- block for animate navigation menu -->
+			<div class="nav-animate"></div>
+			
+			<!-- Hero block area -->
+			<div id="latestalbum" class="hero pad">
+				<div class="container">
+					<!-- hero content -->
+					<div class="hero-content ">
+						<!-- heading -->
+						<h2>Quotes For Riders</h2>
+						<hr>
+						<!-- paragraph -->
+						<p>Never twist the <strong class="theme-color">Throttle</strong> with your <strong class="theme-color">Ego</strong>.</p>
+					</div>
+					<!-- hero play list -->
+					<div class="hero-playlist">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<!-- music album image -->
+								<div class="figure">
+									<!-- image -->
+									<img class="img-responsive" src="Template/img/album/rider.jpg" alt="" />
+									<!-- disk image -->
+									
+								</div>
+								<!-- album details -->
+								<div class="album-details">
+									<!-- title -->
+                                                                        <h4>It's not about what you ride<br> but how you ride</h4>
+									<!-- composed by -->
+									<!-- button -->
+									
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<!-- play list -->
+								<div class="playlist-content">
+									<ul class="list-unstyled">
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes One</h4>
+												<p><strong>No hour of life is wasted when it's spent on two wheels.&#128519;</strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes two</h4>
+												<p><strong>I am a biker, I do what I want, When I want, Where I want.&#128526; </strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes three</h4>
+												<p><strong>Love to ride, Love to travel.&#129321;</strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes four</h4>
+												<p><strong>I don't know where I am going but I am going.&#128523; </strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes five</h4>
+												<p><strong>Yes I am addicted to my bike because it's way better than being addicted to fake love.&#128521; </strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes six</h4>
+												<p><strong>I don't Love the people drive fast, That's the reason why I overtake them.&#128527;</strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes seven</h4>
+												<p><strong>You are not alone bro your bike is with you.&#128525;</strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+										<li class="playlist-number">
+											<!-- song information -->
+											<div>
+												<!-- song title -->
+												<h4>Quotes eight</h4>
+												<p><strong>My tiger roars in the city.&#128520;</strong></p>
+											</div>
+											<!-- music icon -->
+											
+											<div class="clearfix"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ hero end -->
+			
+			<!-- promo -->
+			<div class="promo parallax-one pad">
+				<div class="container">
+					<!-- promo element -->
+					<div class="promo-element ">
+						<!-- heading -->
+						<h3>Riding is An Art...</h3>
+						<!-- paragraph -->
+                                                <p>Riding a bike is like an art, something you do because you feel something inside<strong> "Valentino Rossi"</strong></p>
+						<!-- link -->
+						
+					</div>
+				</div>
+			</div>
+			<!--/ promo end -->
+			
+			<!-- featured abbum -->
+			<div class="featured pad" id="featuredalbum">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Past Events</h2>
+					</div>
+					<!-- featured album elements -->
+					<div class="featured-element">
+						<div class="row">
+							<div class="col-md-4 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/featured/1.jpg" alt="" />
+										<!-- paragraph -->
+										
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Ducati Event</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span class="label label-theme">Love</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/featured/2.jpg" alt="" />
+										<!-- paragraph -->
+										
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Yamaha Event</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span class="label label-theme">Love</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/featured/3.jpg" alt="" />
+										<!-- paragraph -->
+										
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>KTM Event</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span class="label label-theme">Love</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/featured/4.jpg" alt="" />
+										<!-- paragraph -->
+										
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Mini Cooper Event</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span class="label label-theme">Love</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/featured/5.jpg" alt="" />
+										<!-- paragraph -->
+										
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Porsche Event</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span class="label label-theme">Love</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<!-- featured item -->
+								<div class="featured-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/featured/6.jpg" alt="" />
+										<!-- paragraph -->
+										
+									</div>
+									<!-- featured information -->
+									<div class="featured-item-info">
+										<!-- featured title -->
+										<h4>Royal Enfield</h4>
+										<!-- horizontal line -->
+										<hr />
+										<!-- some responce from social medial or web likes -->
+										<p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span class="label label-theme">Love</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- features end -->
+			
+			<!-- call to action -->
+			<div class="cta parallax-one pad">
+				<div class="container">
+					<!-- cta element -->
+					<div class="cta-element ">
+						<div class="row">
+							<div class="col-md-9 col-sm-8">
+								<!-- heading -->
+								<h3>Riders Club</h3>
+								<!-- paragraph -->
+								<p>This is an online Bike Application called RIDERS CLUB, to help the people who like to travel.
+                                                                    It help to the riders to know about showroom, mechanical shop near to them. They can find the mechanical shop, showrooms without the help of other people.
+                                                                    It contain more things useful for riders.This system help the users in different ways. 
+                                                                    When the user vehicle become get repaired they can find the mechanical shop which is nearest to them without any help of other people.
+                                                                    They can also find the showrooms and accessories shop for more works. It provide the user to know about riders clubs, and they can join on the clubs.
+                                                                    By the using of Riders Club mechanical shop can get more profits. The mechanical shop can create an account and it can viewed by all the users and they get more customers. 
+                                                                    It is same as showrooms, they can also get customers through online. The Guest who visits the system must register himself by filling up personal details. 
+                                                                    After registration user can login to the system with his username and password in order to access the system. 
+                                                                    User can check various showrooms, accessories shop, riders club and can view each of them. User can select the showrooms or accessories shop and they can get the details.</p>
+							</div>
+							<div class="col-md-3 col-sm-4">
+								<div class="cta-btn text-center">
+									<!-- purchase now button -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ cta end -->
+			
+			<!-- work with us -->
+			<div class="work-with-us pad" id="joinus">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Work With Us</h2>
+					</div>
+					<!-- why work with us content -->
+					<div class="why-content">
+						<!-- paragraph -->
+						<p class="why-message">It would be a great pleasure to have you in our team, follow these steps to join us.</p>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<!-- why work with us item -->
+								<div class="why-item  delay-one">
+									<span class="why-number">1</span>
+									<!-- paragraph -->
+									<p>Select your category. If you are a user select user, if you are a shop owner select shop, if you are a showroom owner select showroom</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- why work with us item -->
+								<div class="why-item  delay-two">
+									<span class="why-number">2</span>
+									<!-- paragraph -->
+                                                                        <p>Fill the form for registration.After the registration submit your details.<br><br><br></p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<!-- why work with us item -->
+								<div class="why-item  delay-three">
+									<span class="why-number">3</span>
+									<!-- paragraph -->
+									<p>After submit your details then go to login and enjoy.<br><br><br><br></p>
+								</div>
+							</div>
+							
+						</div>
+						<!-- apply button -->
+						<div class="apply-btn">
+							<!-- button line -->
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ end work with us -->
+			
+			<!-- news letter -->
+			<div class="news-letter">
+				<div class="container">
+					<!-- news letter inner content -->
+					<div class="news-content ">
+						<!-- heading -->
+						<h3>Sign Up For Newsletter</h3>
+						<!-- paragraph -->
+						<p></p>
+						<!-- subscribe form -->
+						<form>
+							<div class="carousel-inner">
+								<a href="Template/../Login.jsp" class="animated fadeIn btn btn-theme">Login</a>
+							</div><!-- /input-group -->
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- news letter end -->
+			
+			<div class="portfolio pad" id="portfolio">
+				<div>
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Gallery</h2>
+					</div>
+				</div>
+				<!-- portfolio -->
+				<div class="portfolio-content" id="portfolioOwl">
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/1.jpg" alt="">
+						
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/2.jpg" alt="">
+						<!-- transparent background -->
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/3.jpg" alt="">
+						<!-- transparent background -->
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/4.jpg" alt="">
+						<!-- transparent background -->
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/5.jpg" alt="">
+						<!-- transparent background -->
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/6.jpg" alt="">
+						<!-- transparent background -->
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/7.jpg" alt="">
+						<!-- transparent background -->
+						
+					</div>
+					<div class="item">
+						<!-- item image -->
+						<img class="img-responsive" src="Template/img/portfolio/8.jpg" alt="">
+						<!-- transparent background -->
+					
+						
+					</div>
+			
+				<!-- portfolio end -->
+			</div>
+			<!-- work with us end -->
+			
+			<!-- events -->
+			<div class="events parallax-three pad" id="events">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading-shadow">
+						<!-- heading -->
+						<h2>Company</h2>
+					</div>
+					<!-- events element -->
+					<div class="events-element">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<!-- event item -->
+								<div class="events-item ">
+									<!-- image container -->
+									<div class="figure">
+										
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/event/1.jpg" alt="" />
+										<!-- image hover -->
+										
+									</div>
+									<!-- event information -->
+									<div class="event-info">
+										<!-- event title -->
+										<h3>YAMAHA</h3>
+										<!-- horizontal line --><hr />
+										<!-- paragraph -->
+										<p>Yamaha Motor Co., Ltd. is a Japanese manufacturer of motorcycles, marine products such as boats and outboard motors, and other motorized products. The company was established in 1955 upon separation from Yamaha Corporation, and is headquartered in Iwata, Shizuoka, Japan. </p>
+										<!-- buy ticket button link -->
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<!-- event item -->
+								<div class="events-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- event date -->
+										
+										<!-- event location -->
+										
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/event/2.jpg" alt="" />
+										<!-- image hover -->
+										
+									</div>
+									<!-- event information -->
+									<div class="event-info">
+										<!-- event title -->
+										<h3>KTM</h3>
+										<!-- horizontal line --><hr />
+										<!-- paragraph -->
+										<p>KTM AG is an Austrian motorcycle and sports car manufacturer owned by Pierer Mobility AG and Indian manufacturer Bajaj Auto. It was formed in 1992 but traces its foundation to as early as 1934. Today, KTM AG is the parent company of the KTM Group, consisting of a number of motorcycle brands.</p>
+										<!-- buy ticket button link -->
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<!-- event item -->
+								<div class="events-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- event date -->
+										
+										<!-- event location -->
+										
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/event/3.jpg" alt="" />
+										<!-- image hover -->
+										
+									</div>
+									<!-- event information -->
+									<div class="event-info">
+										<!-- event title -->
+										<h3>KAWASAKI</h3>
+										<!-- horizontal line --><hr />
+										<!-- paragraph -->
+										<p>Kawasaki motorcycles are manufactured by the Motorcycle & Engine division of Kawasaki Heavy Industries at plants in Japan, Michigan, Philippines, India, Indonesia, Bangladesh and Thailand.</p>
+										<!-- buy ticket button link -->
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<!-- event item -->
+								<div class="events-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- event date -->
+										
+										<!-- event location -->
+										
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/event/4.jpg" alt="" />
+										<!-- image hover -->
+										
+									</div>
+									<!-- event information -->
+									<div class="event-info">
+										<!-- event title -->
+										<h3>ROYAL ENFIELD</h3>
+										<!-- horizontal line --><hr />
+										<!-- paragraph -->
+										<p>Royal Enfield is an Indian multinational motorcycle manufacturing company with the tag of "the oldest global motorcycle brand in continuous production" manufactured in factories in Chennai in India.</p>
+										<!-- buy ticket button link -->
+										
+									</div>
+								</div>
+							</div>
+                                                        <div class="col-md-6 col-sm-6">
+								<!-- event item -->
+								<div class="events-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- event date -->
+										
+										
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/event/5.jpg" alt="" />
+										<!-- image hover -->
+										
+									</div>
+									<!-- event information -->
+									<div class="event-info">
+										<!-- event title -->
+										<h3>DUCATI</h3>
+										<!-- horizontal line --><hr />
+										<!-- paragraph -->
+										<p>Ducati Motor Holding S.p.A. is the motorcycle-manufacturing division of Italian company Ducati, headquartered in Bologna, Italy. The company is owned by Italian automotive manufacturer Lamborghini, through its German parent company Audi, itself owned by the Volkswagen Group.</p>
+										<!-- buy ticket button link -->
+										
+									</div>
+								</div>
+							</div>
+                                                        <div class="col-md-6 col-sm-6">
+								<!-- event item -->
+								<div class="events-item ">
+									<!-- image container -->
+									<div class="figure">
+										<!-- event date -->
+										
+										<!-- event location -->
+										
+										<!-- image -->
+										<img class="img-responsive" src="Template/img/event/6.jpg" alt="" />
+										
+									</div>
+									<!-- event information -->
+									<div class="event-info">
+										<!-- event title -->
+										<h3>BMW</h3>
+										<!-- horizontal line --><hr />
+										<!-- paragraph -->
+										<p>BMW Motorrad is the motorcycle brand of the German company BMW, part of its Corporate and Brand Development division. It has produced motorcycles since 1923, and achieved record sales for the fifth year in succession in 2015.</p>
+										<!-- buy ticket button link -->
+										
+									</div>
+								</div>
+							</div>
+                                                    
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- events end -->
+			
+			<!-- about -->
+			<div class="about" id="team">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Who We Are?</h2>
+					</div>
+					<!-- about what we are like content -->
+					<div class="about-what-we">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<div class="what-we-item ">
+									<!-- heading with icon -->
+									<h3><i class="fa fa-heartbeat"></i> What we do?</h3>
+									<!-- paragraph -->
+									<p>This is an online Bike Application called RIDERS CLUB, to help the people who like to travel.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="what-we-item ">
+									<!-- heading with icon -->
+									<h3><i class="fa fa-hand-o-up"></i> Why choose us?</h3>
+									<!-- paragraph -->
+									<p>It help to the riders to know about showroom, mechanical shop near to them. They can find the mechanical shop, showrooms without the help of other people.
+                                                                    It contain more things useful for riders.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="what-we-item ">
+									<!-- heading with icon -->
+									<h3><i class="fa fa-map-marker"></i> Where we are?</h3>
+									<!-- paragraph -->
+									<p>All parts of the world.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- our team -->
+				
+			
+			<!-- meet -->
+			<div class="meet parallax-four pad" id="meet">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading-shadow">
+						<h2>Upcoming Meets</h2>
+					</div>
+					<!-- meet location image -->
+					<div class="meet-map">
+						<img class="img-responsive img-map" src="Template/img/flat/map.png" alt="" />
+						<!-- map marker for India  -->
+						<a href="Template/#" class="map-marker india " data-toggle="tooltip" data-placement="top" title="India"><img class="img-responsive" src="Template/img/flat/map-marker.png" alt="" /></a>
+						<!-- map marker for United States  -->
+						<a href="Template/#" class="map-marker usa " data-toggle="tooltip" data-placement="top" title="United States"><img class="img-responsive" src="Template/img/flat/map-marker.png" alt="" /></a>
+						<!-- map marker for South Africa  -->
+						<a href="Template/#" class="map-marker sa " data-toggle="tooltip" data-placement="top" title="South Africa"><img class="img-responsive" src="Template/img/flat/map-marker.png" alt="" /></a>
+						<!-- map marker for Russia  -->
+						<a href="Template/#" class="map-marker russia " data-toggle="tooltip" data-placement="top" title="Russia"><img class="img-responsive" src="Template/img/flat/map-marker.png" alt="" /></a>
+						<!-- map marker for Brazil  -->
+						<a href="Template/#" class="map-marker brazil " data-toggle="tooltip" data-placement="top" title="Brazil"><img class="img-responsive" src="Template/img/flat/map-marker.png" alt="" /></a>
+					</div>
+				</div>
+			</div>
+			<!-- meet end -->
+			
+			<!-- contact -->
+			<div class="contact pad" id="contact">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Contact Us</h2>
+					</div>
+					<div class="row">	
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-street-view"></i>
+								<!-- contact details  -->
+								<span class="contact-details">#30/67, 5th Street, Mega Market Circle, New Delhi - 625001</span>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-wifi"></i>
+								<!-- contact details  -->
+								<span class="contact-details">music.site@melodi.com</span>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-phone"></i>
+								<!-- contact details  -->
+								<span class="contact-details">555 555 5555</span>
+							</div>
+						</div>
+					</div>
+					<!-- form content -->
+					
+
+				</div>
+			</div>
+			<!-- contact end -->
+			
+			<!-- footer -->
+			<footer>
+				<div class="container">
+					<!-- social media links -->
+					<div class="social">
+						<a class="h-facebook" href="index.html"><i class="fa fa-facebook"></i></a>
+						<a class="h-google" href="index.html"><i class="fa fa-google-plus"></i></a>
+						<a class="h-linkedin" href="index.html"><i class="fa fa-linkedin"></i></a>
+						<a class="h-twitter" href="index.html"><i class="fa fa-twitter"></i></a>
+					</div>
+					<!-- copy right -->
+					
+				</div>
+			</footer>
+			<!-- footer end -->
+			
+			<!-- Scroll to top -->
+			<span class="totop"><a href="Template/#"><i class="fa fa-chevron-up"></i></a></span> 
+			
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="Template/js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="Template/js/bootstrap.min.js"></script>
+		<!-- WayPoints JS -->
+		<script src="Template/js/waypoints.min.js"></script>
+		<!-- Include js plugin -->
+		<script src="Template/js/owl.carousel.min.js"></script>
+		<!-- One Page Nav -->
+		<script src="Template/js/jquery.nav.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="Template/js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="Template/js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="Template/js/custom.js"></script>
+	</body>	
+</html>
